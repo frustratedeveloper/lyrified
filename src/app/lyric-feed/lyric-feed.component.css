@@ -1,0 +1,28 @@
+.container {
+    margin-top: 10px;
+    border-bottom: 2px solid #D5E7ED;
+}
+
+h5 {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+#artist {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+#lyrics {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+#comments {
+    font-size: 14px;
+    margin-top: -15px;
+}

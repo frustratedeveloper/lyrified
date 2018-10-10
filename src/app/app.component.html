@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+      <h1>Lyrified</h1>
+      <p><span><i class="fab fa-github"></i></span> github.com/frustratedeveloper</p>
+      <p id="twitter"><span><i class="fab fa-twitter"></i></span> twitter.com/jaysgonzales</p>
+      <div class="container" id="inputFeedForm">
+        <form id="">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="inputUserName" placeholder="User Name" #newUserName>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="inputTitle" placeholder="Title" #newTitle>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="inputArtist" placeholder="Artist" #newArtist>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputLyrics" placeholder="Lyrics" #newLyrics>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="inputComments" placeholder="Comments" #newComments>
+            </div>
+          </div>
+          <button (click)="addLyrics(newUserName, newTitle, newArtist, newLyrics, newComments)" class="btn btn-info btn-sm">Lyrified!</button>
+        </form>
+      </div>
+      <div id="feed">
+        <app-lyric-feed *ngFor="let i of lyricPost" [lyricSection] = i></app-lyric-feed>
+      </div>
+    </div>
+    <div class="col-md-3">
+      
+    </div>
+  </div>
+</div>
+
+
+
+ 
